@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Reasonably Selenium's Website and Blog">
+	<link rel="stylesheet" href="{{'assets/css/style.css' | relative_url}}">
+	<title> {% unless page.title == nil %}{{ page.title }} | {% endunless %}{{ site.title }}</title>
+</head>
+<body>
+    <div class="layout">
+	{% include header.html %}
+	<div class="content">
+	    {{ content }}
+	</div>
+    {% include footer.html %}
+    </div>
+</body>
+</html>

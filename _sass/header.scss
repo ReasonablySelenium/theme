@@ -1,0 +1,33 @@
+.header {
+  background: #006755;
+  color: white;
+  display: flex;
+  flex: auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+}
+
+.nav__link {
+  margin-left: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  flex-grow: 2;
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+    display: flex;
+    padding: 3rem 5rem;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .nav__link {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+

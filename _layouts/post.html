@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h2>Posted on {{ page.date | date_to_string }}</h2>
+<div class="post-hero">
+    <img src="/assets/img/{{ page.thumbnail.src }}" alt="">
+</div>
+{{ content }}
+<b>Tags</b>
+<ul class="list tags">
+    {% for tag in page.tags %}
+    <li>{{ tag }}</li>
+    {% endfor %}
+</ul>

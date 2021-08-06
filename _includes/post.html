@@ -1,0 +1,14 @@
+{% for post in site.posts %}
+<li>
+<div>
+    <h1>{{ post.title }}</h1>
+    <div class="post-hero">
+	{% if post.thumbnail %}
+	    <img src="/assets/img/{{ post.thumbnail.src }}" alt="{{ post.thumbnail.alt }}" loading=lazy>
+	{% endif %}
+    </div>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}" class="read-more"><i>Continue Reading...</i></a>
+</div>
+</li>
+{% endfor %}
