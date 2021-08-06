@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "The theme for https://seleniumreal.github.io/"
   spec.homepage      = "https://github.com/SeleniumReal/theme"
-  spec.license       = "GPLv3"
+  spec.license       = "GPL-3.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
