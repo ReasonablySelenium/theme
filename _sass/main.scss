@@ -10,10 +10,10 @@ body {
 :any-link {
   text-decoration: none;
   color: inherit;
-}
 
-:any-link:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 img {
