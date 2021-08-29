@@ -10,10 +10,7 @@
 <body>
     <div class="layout">
 	{% include header.html %}
-        {% if showHero = true %}
-          {% include hero.html %}
-        {% endif %}
-	<div class="content">
+        <div class="content">
 	    {{ content }}
 	</div>
     {% include footer.html %}
